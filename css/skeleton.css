@@ -238,9 +238,9 @@
 #terms ul li{ line-height:1.2em;}
 .m20{margin-top:20px;}
 .mb20{margin-bottom:20px;}
-#header{ border-bottom:8px #444 solid}
-#logo{margin:10px 0 10px 15px;}
-.row{margin-bottom:10px; background:#f3f3f3; padding:5px 10px 10px 40px;}
+#header h2{ margin:45px 20px 0 0; }
+#logo{margin:10px 0 10px 15px; display:inline-block;}
+.row{margin-bottom:10px; background:#f3f3f3; padding:12px 10px 10px 40px;}
 p.hint{font-size:0.9em; color:#444; margin-bottom:0px;}
 .imp{background:#FFF0F2;}
 #footer{text-align:center; font-size:0.8em; color:#BBB; margin-bottom:10px; background:#444; padding:10px 0}

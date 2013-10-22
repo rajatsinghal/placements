@@ -52,7 +52,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=placements; unix_socket=/tmp/mysql.sock',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '112358',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(

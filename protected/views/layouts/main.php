@@ -30,7 +30,7 @@
 			<a href="http://hitwicket.com" target="_blank" id="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo_com.png" alt="Hitwicket" /></a>
         	</div>
             <div class="eight columns omega last" >
-				<!--<h2 class="drive">Recruitment Drive 2011</h2> -->
+				<h2 class="drive">Internship Registration</h2>
         	</div>
 		</div><!-- header -->
 
