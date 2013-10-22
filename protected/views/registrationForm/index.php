@@ -24,7 +24,7 @@
 		<li>This will be a virtual internship for a minimum period of 2 months.</li>
 		<li>Ensure that your resume is in PDF format. <strong>Other formats will be rejected</strong>.</li>
 		<li>A stipend of Rs 5,000/month will be paid to the candidate.</li> 
-		<li>For any queries, email us at <a href="mailto:info@octathorpeweb.com">info@octathorpeweb.com</a>.</li>
+		<li>For any queries, email us at <a href="mailto:support@hitwicket.com">support@hitwicket.com</a>.</li>
 	</ul>
 	<!--<label><input type="checkbox" /> I've read the above</label> <br clear="all" /> -->
 	<br />
