@@ -149,7 +149,7 @@ class RegistrationFormController extends Controller
 			}
 		}
 		else
-			if(isset($_GET['college']))
+			if(isset($_GET['college']) && $_GET['college'] != "others")
 				$model->college = $_GET['college'];
 
 		$this->render('new',array(
