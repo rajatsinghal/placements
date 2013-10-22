@@ -1307,3 +1307,212 @@ in /Users/octathorpe1/projects/placements/index.php (13)
 2013/10/22 07:30:06 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
 in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
 in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 09:52:11 [error] [exception.CException] exception 'CException' with message 'Property "RegistrationForm.gpa" is not defined.' in /Users/octathorpe1/projects/placements/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/octathorpe1/projects/placements/framework/db/ar/CActiveRecord.php(145): CComponent->__get('gpa')
+#1 /Users/octathorpe1/projects/placements/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('gpa')
+#2 /Users/octathorpe1/projects/placements/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistrationForm), 'gpa')
+#3 /Users/octathorpe1/projects/placements/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistrationForm), 'gpa', Array)
+#4 /Users/octathorpe1/projects/placements/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistrationForm), 'gpa', Array)
+#5 /Users/octathorpe1/projects/placements/protected/views/registrationForm/_search.php(45): CActiveForm->textField(Object(RegistrationForm), 'gpa', Array)
+#6 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require('/Users/octathor...')
+#7 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/octathor...', Array, true)
+#8 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): CBaseController->renderFile('/Users/octathor...', Array, true)
+#9 /Users/octathorpe1/projects/placements/protected/views/registrationForm/admin.php(33): CController->renderPartial('_search', Array)
+#10 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require('/Users/octathor...')
+#11 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/octathor...', Array, true)
+#12 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): CBaseController->renderFile('/Users/octathor...', Array, true)
+#13 /Users/octathorpe1/projects/placements/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php(232): CController->render('admin', Array)
+#15 /Users/octathorpe1/projects/placements/framework/web/actions/CInlineAction.php(49): RegistrationFormController->actionAdmin()
+#16 /Users/octathorpe1/projects/placements/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Users/octathorpe1/projects/placements/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Users/octathorpe1/projects/placements/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Users/octathorpe1/projects/placements/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Users/octathorpe1/projects/placements/framework/web/CController.php(291): CFilterChain->run()
+#23 /Users/octathorpe1/projects/placements/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(282): CController->run('admin')
+#25 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(141): CWebApplication->runController('registrationFor...')
+#26 /Users/octathorpe1/projects/placements/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /Users/octathorpe1/projects/placements/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/placements/index.php?r=registrationForm/admin
+HTTP_REFERER=http://localhost/placements/index.php?r=site/login
+---
+2013/10/22 09:52:59 [error] [exception.CException] exception 'CException' with message 'Property "RegistrationForm.gpa" is not defined.' in /Users/octathorpe1/projects/placements/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/octathorpe1/projects/placements/framework/db/ar/CActiveRecord.php(145): CComponent->__get('gpa')
+#1 /Users/octathorpe1/projects/placements/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('gpa')
+#2 /Users/octathorpe1/projects/placements/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(RegistrationForm), 'gpa')
+#3 /Users/octathorpe1/projects/placements/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(RegistrationForm), 'gpa', Array)
+#4 /Users/octathorpe1/projects/placements/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(RegistrationForm), 'gpa', Array)
+#5 /Users/octathorpe1/projects/placements/protected/views/registrationForm/_search.php(45): CActiveForm->textField(Object(RegistrationForm), 'gpa', Array)
+#6 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require('/Users/octathor...')
+#7 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/octathor...', Array, true)
+#8 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): CBaseController->renderFile('/Users/octathor...', Array, true)
+#9 /Users/octathorpe1/projects/placements/protected/views/registrationForm/admin.php(33): CController->renderPartial('_search', Array)
+#10 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require('/Users/octathor...')
+#11 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/octathor...', Array, true)
+#12 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): CBaseController->renderFile('/Users/octathor...', Array, true)
+#13 /Users/octathorpe1/projects/placements/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php(232): CController->render('admin', Array)
+#15 /Users/octathorpe1/projects/placements/framework/web/actions/CInlineAction.php(49): RegistrationFormController->actionAdmin()
+#16 /Users/octathorpe1/projects/placements/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Users/octathorpe1/projects/placements/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Users/octathorpe1/projects/placements/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Users/octathorpe1/projects/placements/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Users/octathorpe1/projects/placements/framework/web/CController.php(291): CFilterChain->run()
+#23 /Users/octathorpe1/projects/placements/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(282): CController->run('admin')
+#25 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(141): CWebApplication->runController('registrationFor...')
+#26 /Users/octathorpe1/projects/placements/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /Users/octathorpe1/projects/placements/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/placements/index.php?r=registrationForm/admin
+HTTP_REFERER=http://localhost/placements/index.php?r=site/login
+---
+2013/10/22 09:53:19 [error] [exception.CException] exception 'CException' with message 'Property "RegistrationForm.gpa" is not defined.' in /Users/octathorpe1/projects/placements/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/octathorpe1/projects/placements/framework/db/ar/CActiveRecord.php(145): CComponent->__get('gpa')
+#1 /Users/octathorpe1/projects/placements/protected/models/RegistrationForm.php(136): CActiveRecord->__get('gpa')
+#2 /Users/octathorpe1/projects/placements/protected/views/registrationForm/admin.php(30): RegistrationForm->search()
+#3 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require('/Users/octathor...')
+#4 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/octathor...', Array, true)
+#5 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): CBaseController->renderFile('/Users/octathor...', Array, true)
+#6 /Users/octathorpe1/projects/placements/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php(232): CController->render('admin', Array)
+#8 /Users/octathorpe1/projects/placements/framework/web/actions/CInlineAction.php(49): RegistrationFormController->actionAdmin()
+#9 /Users/octathorpe1/projects/placements/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /Users/octathorpe1/projects/placements/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Users/octathorpe1/projects/placements/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /Users/octathorpe1/projects/placements/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/octathorpe1/projects/placements/framework/web/CController.php(291): CFilterChain->run()
+#16 /Users/octathorpe1/projects/placements/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(141): CWebApplication->runController('registrationFor...')
+#19 /Users/octathorpe1/projects/placements/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /Users/octathorpe1/projects/placements/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/placements/index.php?r=registrationForm/admin
+HTTP_REFERER=http://localhost/placements/index.php?r=site/login
+---
+2013/10/22 09:55:52 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.title" is not defined.' in /Users/octathorpe1/projects/placements/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/octathorpe1/projects/placements/framework/YiiBase.php(220): CComponent->__set('title', 'FB')
+#1 /Users/octathorpe1/projects/placements/framework/zii/widgets/grid/CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 /Users/octathorpe1/projects/placements/framework/zii/widgets/grid/CGridView.php(359): CGridView->initColumns()
+#3 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(147): CGridView->init()
+#4 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /Users/octathorpe1/projects/placements/protected/views/registrationForm/admin.php(40): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require('/Users/octathor...')
+#7 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/octathor...', Array, true)
+#8 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): CBaseController->renderFile('/Users/octathor...', Array, true)
+#9 /Users/octathorpe1/projects/placements/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#10 /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php(232): CController->render('admin', Array)
+#11 /Users/octathorpe1/projects/placements/framework/web/actions/CInlineAction.php(49): RegistrationFormController->actionAdmin()
+#12 /Users/octathorpe1/projects/placements/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /Users/octathorpe1/projects/placements/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/octathorpe1/projects/placements/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /Users/octathorpe1/projects/placements/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/octathorpe1/projects/placements/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/octathorpe1/projects/placements/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(282): CController->run('admin')
+#21 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(141): CWebApplication->runController('registrationFor...')
+#22 /Users/octathorpe1/projects/placements/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/octathorpe1/projects/placements/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/placements/index.php?r=registrationForm/admin
+HTTP_REFERER=http://localhost/placements/index.php?r=site/login
+---
+2013/10/22 10:06:51 [error] [php] include(&lt;a href=&quot;&lt;?php echo Yii.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/octathorpe1/projects/placements/framework/YiiBase.php:427)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /Users/octathorpe1/projects/placements/framework/zii/widgets/CDetailView.php(212): is_callable()
+#2 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(173): CDetailView->run()
+#3 /Users/octathorpe1/projects/placements/protected/views/registrationForm/view.php(44): RegistrationFormController->widget()
+#4 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(126): require()
+#5 /Users/octathorpe1/projects/placements/framework/web/CBaseController.php(95): RegistrationFormController->renderInternal()
+#6 /Users/octathorpe1/projects/placements/framework/web/CController.php(869): RegistrationFormController->renderFile()
+#7 /Users/octathorpe1/projects/placements/framework/web/CController.php(782): RegistrationFormController->renderPartial()
+#8 /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php(65): RegistrationFormController->render()
+#9 unknown(0): RegistrationFormController->actionView()
+#10 /Users/octathorpe1/projects/placements/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#11 /Users/octathorpe1/projects/placements/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 /Users/octathorpe1/projects/placements/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(133): RegistrationFormController->runAction()
+#14 /Users/octathorpe1/projects/placements/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/octathorpe1/projects/placements/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /Users/octathorpe1/projects/placements/framework/web/filters/CInlineFilter.php(58): RegistrationFormController->filterAccessControl()
+#17 /Users/octathorpe1/projects/placements/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /Users/octathorpe1/projects/placements/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/octathorpe1/projects/placements/framework/web/CController.php(265): RegistrationFormController->runActionWithFilters()
+#20 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(282): RegistrationFormController->run()
+#21 /Users/octathorpe1/projects/placements/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /Users/octathorpe1/projects/placements/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/octathorpe1/projects/placements/index.php(13): CWebApplication->run()
+REQUEST_URI=/placements/index.php?r=registrationForm/view&id=1
+in /Users/octathorpe1/projects/placements/protected/views/registrationForm/view.php (44)
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (65)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:09:57 [warning] [application] Failed to set unsafe attribute "hitwicket_team_name" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:09:57 [warning] [application] Failed to set unsafe attribute "linkedin_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:09:57 [warning] [application] Failed to set unsafe attribute "facebook_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:09:57 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:10:52 [warning] [application] Failed to set unsafe attribute "hitwicket_team_name" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:10:52 [warning] [application] Failed to set unsafe attribute "linkedin_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:10:52 [warning] [application] Failed to set unsafe attribute "facebook_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:10:52 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:27 [warning] [application] Failed to set unsafe attribute "hitwicket_team_name" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:27 [warning] [application] Failed to set unsafe attribute "linkedin_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:27 [warning] [application] Failed to set unsafe attribute "facebook_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:27 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:44 [warning] [application] Failed to set unsafe attribute "hitwicket_team_name" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:44 [warning] [application] Failed to set unsafe attribute "linkedin_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:44 [warning] [application] Failed to set unsafe attribute "facebook_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:11:44 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (178)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:14:39 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 10:15:34 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)

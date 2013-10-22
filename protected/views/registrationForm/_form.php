@@ -112,13 +112,6 @@
 		<?php echo $form->error($model,'file_upload'); ?><br />
 	</div>
 
-	<div class="row imp">
-		<label>What is your motivation to join a startup like us?</label>
-		<?php echo $form->textArea($model,'information',array('rows'=>9, 'cols'=>50)); ?>
-        <p class="hint">This is very important to us.</p>
-		<?php echo $form->error($model,'information'); ?>
-	</div>
-
 	<div class="row">
         <label>Are you Human: 3 + 4 = ?</label>
 		<?php echo $form->textField($model,'question'); ?>

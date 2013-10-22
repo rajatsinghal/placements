@@ -5,28 +5,41 @@
 	'attributes'=>array(
 		//'id',
 		'name',
+		'college',
 		'branch',
 		'mobile',
 		'email',
 		'website',
+		'facebook_profile_url',
+		'hitwicket_team_name',
 		'twitter_id',
-		'gpa',
-		'os',
-		'jquery',
-		'jquery_info',
-		'ror',
-		'ror_info',
-		'php',
-		'php_info',
-		'drupal',
-		'drupal_info',
-		//'wordpress',
-		//'wordpress_info',
-		'file_upload',
-		'information',
-		//'question',
+		'linkedin_profile_url',
+		array(
+			'name'=>'why_suitable',
+			'label'=>'Why Suitable',
+		),
+		array(
+			'name'=>'past_experience',
+			'label'=>'Past Experience',
+		),
+		array(
+			'name'=>'hitwicket_experience',
+			'label'=>'Hitwicket Experience',
+		),
+		array(
+			'name'=>'match_report',
+			'label'=>'HW <a href="http://hitwicket.com/match/show/487237" target="_blank">Match</a> Report',
+		),
+		array(
+			'name'=>'reachout_plan',
+			'label'=>'Reach-out Plan',
+		),
+		array(
+			'name'=>'file_upload',
+			'type'=>'raw',
+			'value'=>CHtml::link('View Resume', Yii::app()->baseUrl.$model->file_upload)
+		),
 	),
 )); ?>
-<a href="<?php echo Yii::app()->baseUrl.$model->file_upload;?>" >View Resume</a>
 <br />
 <br />
