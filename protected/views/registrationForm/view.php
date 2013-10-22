@@ -15,10 +15,6 @@
 		'twitter_id',
 		'linkedin_profile_url',
 		array(
-			'name'=>'why_suitable',
-			'label'=>'Why Suitable',
-		),
-		array(
 			'name'=>'past_experience',
 			'label'=>'Past Experience',
 		),

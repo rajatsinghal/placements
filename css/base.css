@@ -86,6 +86,8 @@
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
 
+#terms IMG{ margin:0 0 20px 50px}
+
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 15px; line-height: 22px; color: #777; font-style: italic; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
@@ -138,21 +140,21 @@
 	input[type="button"] {
 		background: #eee; /* Old browsers */
 		background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
-		background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
-		background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
-		background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
-		background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
-		background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+		background: #9F9 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+		background: #9F9 -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+		background: #9F9 -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+		background: #9F9 -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+		background: #9F9 linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
 	  border: 1px solid #aaa;
 	  border-top: 1px solid #ccc;
 	  border-left: 1px solid #ccc;
-	  padding: 4px 12px;
+	  padding: 13px 12px;
 	  -moz-border-radius: 3px;
 	  -webkit-border-radius: 3px;
 	  border-radius: 3px;
 	  color: #444;
 	  display: inline-block;
-	  font-size: 11px;
+	  font-size: 20px;
 	  font-weight: bold;
 	  text-decoration: none;
 	  text-shadow: 0 1px rgba(255, 255, 255, .75);
@@ -296,7 +298,7 @@
 		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #777;
 		margin: 0;
-		width: 300px;
+		width: 35f0px;
 		max-width: 100%;
 		display: block;
 		background: #fff; }
@@ -317,7 +319,7 @@
 	legend {
 		display: inline-block;
 		
-		font-size: 13px;  }
+		font-size: 14px; margin-bottom:4px;  }
 		label.main_label{font-weight: bold; !important;}
 	select {
 		width: 220px; padding:6px 4px }
