@@ -106,6 +106,7 @@
 		<?php echo $form->error($model,'reachout_plan'); ?>
 	</div>
 
+
 	<!--<div class="row imp">
 		<label>What is your motivation to work at a startup like us?</label>
 		<?php echo $form->textArea($model,'information',array('rows'=>9, 'cols'=>50)); ?>

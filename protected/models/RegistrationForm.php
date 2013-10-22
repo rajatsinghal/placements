@@ -55,15 +55,12 @@ class RegistrationForm extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id, question', 'numerical', 'integerOnly'=>true),
-			array('name, email, mobile, question, information, college, branch, why_suitable, past_experience, hitwicket_experience, match_report, reachout_plan', 'required'),
+			array('name, email, mobile, question, college, branch, why_suitable, past_experience, hitwicket_experience, match_report, reachout_plan', 'required'),
 			array('email', 'email','message'=>'Please enter a valid email address.'),
 			array('file_upload', 'file', 'types'=>'pdf','allowEmpty'=>FALSE),
-			//array('name, email,mobile,information', 'required'),
 			array('question', 'compare','compareValue'=>7,'message'=>'Solve the simple math problem above. This is to protect against Spam BOTS.'),
-			array('name, branch, mobile, email, website, twitter_id, file_upload, information', 'length', 'max'=>255),
+			array('name, branch, mobile, email, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information', 'length', 'max'=>255),
 			
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
 			array('id, name, branch, mobile, email, website, twitter_id, gpa, os, jquery, jquery_info, ror, ror_info, php, php_info, drupal, drupal_info, wordpress, wordpress_info, file_upload, information, question', 'safe', 'on'=>'search'),
 		);
 	}
@@ -133,18 +130,6 @@ class RegistrationForm extends CActiveRecord
 		$criteria->compare('email',$this->email,true);
 		$criteria->compare('website',$this->website,true);
 		$criteria->compare('twitter_id',$this->twitter_id,true);
-		$criteria->compare('gpa',$this->gpa,true);
-		$criteria->compare('os',$this->os,true);
-		$criteria->compare('jquery',$this->jquery,true);
-		$criteria->compare('jquery_info',$this->jquery_info,true);
-		$criteria->compare('ror',$this->ror,true);
-		$criteria->compare('ror_info',$this->ror_info,true);
-		$criteria->compare('php',$this->php,true);
-		$criteria->compare('php_info',$this->php_info,true);
-		$criteria->compare('drupal',$this->drupal,true);
-		$criteria->compare('drupal_info',$this->drupal_info,true);
-		$criteria->compare('wordpress',$this->wordpress,true);
-		$criteria->compare('wordpress_info',$this->wordpress_info,true);
 		$criteria->compare('file_upload',$this->file_upload,true);
 		$criteria->compare('information',$this->information,true);
 		$criteria->compare('question',$this->question);
