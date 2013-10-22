@@ -55,11 +55,11 @@ class RegistrationForm extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id, question', 'numerical', 'integerOnly'=>true),
-			array('name, email, mobile, question, college, branch, past_experience, hitwicket_experience, match_report, reachout_plan', 'required'),
+			array('name, email, mobile, question, college, branch, availability_dates, past_experience, hitwicket_experience, match_report, reachout_plan', 'required'),
 			array('email', 'email','message'=>'Please enter a valid email address.'),
 			array('file_upload', 'file', 'types'=>'pdf','allowEmpty'=>FALSE),
 			array('question', 'compare','compareValue'=>7,'message'=>'Solve the simple math problem above. This is to protect against Spam BOTS.'),
-			array('name, branch, mobile, email, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information', 'length', 'max'=>255),
+			array('name, branch, mobile, email, availability_dates, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information', 'length', 'max'=>255),
 			
 			array('id, name, branch, mobile, email, website, twitter_id, gpa, os, jquery, jquery_info, ror, ror_info, php, php_info, drupal, drupal_info, wordpress, wordpress_info, file_upload, information, question', 'safe', 'on'=>'search'),
 		);
@@ -84,7 +84,7 @@ class RegistrationForm extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'branch' => 'Branch',
+			'branch' => 'Major',
 			'mobile' => 'Mobile',
 			'email' => 'Email',
 			'website' => 'Website',

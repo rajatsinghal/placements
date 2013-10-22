@@ -9,6 +9,7 @@
 		'branch',
 		'mobile',
 		'email',
+		'availability_dates',
 		'website',
 		'facebook_profile_url',
 		'hitwicket_team_name',

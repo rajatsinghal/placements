@@ -39,6 +39,12 @@
 	</div>
 	
 	<div class="row">
+		<?php echo $form->labelEx($model, 'availability_dates', array('class'=>'main_label', 'label'=>'Available for Internship')); ?>
+		<?php echo $form->textField($model, 'availability_dates', array('size'=>60,'maxlength'=>255, 'placeholder'=>'Nov 2013 to Feb 2014')); ?>
+		<?php echo $form->error($model, 'availability_dates'); ?>
+	</div>
+	
+	<div class="row">
 		<?php echo $form->labelEx($model,'hitwicket_team_name',array('class'=>'main_label')); ?>
 		<?php echo $form->textField($model,'hitwicket_team_name',array('size'=>60,'maxlength'=>255,'placeholder'=>'optional')); ?>
 
