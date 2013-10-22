@@ -39,7 +39,6 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path', 'showScriptName'=>false,
 			'rules'=>array(
@@ -47,7 +46,7 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
-		),*/
+		),
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=placements;',
 			'emulatePrepare' => true,
