@@ -49,10 +49,10 @@ return array(
 			),
 		),*/
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=placements; unix_socket=/tmp/mysql.sock',
+			'connectionString' => 'mysql:host=localhost;dbname=placements;',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '112358',
+			'password' => 'clog186',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
