@@ -1295,3 +1295,15 @@ in /Users/octathorpe1/projects/placements/index.php (13)
 2013/10/21 17:12:33 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
 in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
 in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 07:30:06 [warning] [application] Failed to set unsafe attribute "hitwicket_team_name" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 07:30:06 [warning] [application] Failed to set unsafe attribute "linkedin_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 07:30:06 [warning] [application] Failed to set unsafe attribute "facebook_profile_url" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
+2013/10/22 07:30:06 [warning] [application] Failed to set unsafe attribute "file_upload" of "RegistrationForm".
+in /Users/octathorpe1/projects/placements/protected/controllers/RegistrationFormController.php (120)
+in /Users/octathorpe1/projects/placements/index.php (13)
