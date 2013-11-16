@@ -29,36 +29,19 @@
 	<!--<label><input type="checkbox" /> I've read the above</label> <br clear="all" /> -->
 	<br />
 	<div class="tac">
-		<?php echo CHtml::dropDownList('college', '', array(
-		'ISB - Indian School of Business, Hyderabad'=>'ISB - Indian School of Business, Hyderabad',
-		'Indian Institute of Management, Ahmedabad'=>'Indian Institute of Management, Ahmedabad', 
-		'Indian Institute of Management, Bangalore'=>'Indian Institute of Management, Bangalore', 
-		'Indian Institute of Management, Calcutta'=>'Indian Institute of Management, Calcutta',
-		'Indian Institute of Management, Lucknow'=>'Indian Institute of Management, Lucknow',
-		'Indian Institute of Management, Indore'=>'Indian Institute of Management, Indore',
-		'XLRI - Xavier Labour Research Institute, Jamshedpur'=>'XLRI - Xavier Labour Research Institute, Jamshedpur',
-		'FMS - Faculty of Management Studies, University of Delhi'=>'FMS - Faculty of Management Studies, University of Delhi',
-		'S.P.Jain Institute of Management Studies, Mumbai'=>'S. P. Jain Institute of Management Studies, Mumbai',
-		'Narsee Monjee Institute of Management Studies, Mumbai'=>'Narsee Monjee Institute of Management Studies, Mumbai',
-		'Schools of Management, IIT (Mumbai, Delhi, Chennai)'=>'Schools of Management, IIT (Mumbai, Delhi, Chennai)',
-		'Institute of Management & Technology, Ghaziabad'=>'Institute of Management & Technology, Ghaziabad',
-		'Symbiosis Institute of Business Management, Pune'=>'Symbiosis Institute of Business Management, Pune',
-		'others'=>'Others'
-		), array('prompt'=>'Select your college', 'style'=>"margin:auto;")); ?><br />
 		<?php echo CHtml::link("Proceed to Registration &raquo;", array('new'), array('class'=>'button m20', 'id'=>'register')); ?>
-		<div class="errorMessage mb20" style="display:none" id="college_error">Please select your college.</div>
         <br />
 	</div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
 	$("#register").click(function() {
-		if(!$("#college").val()) {
+/		if(!$("#college").val()) {
 			$("#college_error").show();
 			return false;
-		}
-		else {
+		} */
+//		else {
 			$(this).attr('href', "<?php echo $this->createUrl('/registrationForm/new', array('college'=>'NULL')); ?>".replace("NULL", $("#college").val()));
-		}
+//		}
 	});
 </script>

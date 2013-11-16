@@ -55,7 +55,7 @@ class RegistrationForm extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id, question', 'numerical', 'integerOnly'=>true),
-			array('name, email, mobile, question, college, branch, availability_dates, past_experience, hitwicket_experience, match_report, reachout_plan', 'required'),
+			array('name, email, mobile, question, college, availability_dates, past_experience, hitwicket_experience, reachout_plan, hitwicket_team_name, hiwicket_user_engagement_strategy', 'required'),
 			array('email', 'email','message'=>'Please enter a valid email address.'),
 			array('file_upload', 'file', 'types'=>'pdf','allowEmpty'=>FALSE),
 			array('question', 'compare','compareValue'=>7,'message'=>'Solve the simple math problem above. This is to protect against Spam BOTS.'),

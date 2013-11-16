@@ -51,7 +51,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=placements;',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'clog186',
+			'password' => '112358',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(

@@ -32,38 +32,20 @@
 		<?php echo $form->error($model,'college'); ?>
 	</div>
 	
-	<div class="row">
-		<?php echo $form->labelEx($model,'branch',array('class'=>'main_label', 'label'=>'Major')); ?>
-		<?php echo $form->textField($model,'branch',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'branch'); ?>
-	</div>
 	
 	<div class="row">
-		<?php echo $form->labelEx($model, 'availability_dates', array('class'=>'main_label', 'label'=>'Available for Internship')); ?>
+		<?php echo $form->labelEx($model, 'availability_dates', array('class'=>'main_label', 'label'=>'Available for Internship/Work')); ?>
 		<?php echo $form->textField($model, 'availability_dates', array('size'=>60,'maxlength'=>255, 'placeholder'=>'eg: Nov 2013 to Feb 2014')); ?>
 		<?php echo $form->error($model, 'availability_dates'); ?>
 	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'hitwicket_team_name',array('class'=>'main_label')); ?>
-		<?php echo $form->textField($model,'hitwicket_team_name',array('size'=>60,'maxlength'=>255,'placeholder'=>'optional')); ?>
+		<?php echo $form->textField($model,'hitwicket_team_name',array('size'=>60,'maxlength'=>255)); ?>
 
 		<?php echo $form->error($model,'hitwicket_team_name'); ?>
 	</div>
 	
-	<div class="row">
-		<?php echo $form->labelEx($model,'linkedin_profile_url',array('class'=>'main_label')); ?>
-		<?php echo $form->textField($model,'linkedin_profile_url',array('size'=>60,'maxlength'=>255,'placeholder'=>'optional')); ?>
-
-		<?php echo $form->error($model,'linkedin_profile_url'); ?>
-	</div>
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'facebook_profile_url',array('class'=>'main_label')); ?>
-		<?php echo $form->textField($model,'facebook_profile_url',array('size'=>60,'maxlength'=>255,'placeholder'=>'optional')); ?>
-
-		<?php echo $form->error($model,'facebook_profile_url'); ?>
-	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'twitter_id',array('class'=>'main_label')); ?>
@@ -95,19 +77,20 @@
 	</div>
 
     <div class="row">
-		<label>Signup at Hitwicket.com and go through the new user introduction tutorial. Suggest ways to improve this and make it easier for new users to understand the crux of the game.</label>
+		<label>Suggest ways to improve Hitwicket and make it easier for new users to understand the crux of the game.</label>
 		<?php echo $form->textArea($model,'hitwicket_experience',array('rows'=>9, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'hitwicket_experience'); ?>
 	</div>
-    
-	<div class="row">
-		<label>Go through this match: <a href="http://hitwicket.com/match/show/487237" target="_blank">http://hitwicket.com/match/show/487237</a> and write a 50-100 word match report on it, like a journalist. Try to bring out the excitement of the match in your report.</label>
-		<?php echo $form->textArea($model,'match_report',array('rows'=>9, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'match_report'); ?>
-	</div>
 	
 	<div class="row">
-		<label>What do your think is the best way for Hitwicket to reach out to all B-School students in India?</label>
+		<label>Suggest ways to improve Hitwicket's User engagement strategies ( Email, Forum, Facebook page, Twitter etc.).</label>
+		<?php echo $form->textArea($model,'hiwicket_user_engagement_strategy',array('rows'=>9, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'hiwicket_user_engagement_strategy'); ?>
+	</div>
+    
+	
+	<div class="row">
+		<label>What do your think is the best way for Hitwicket to reach out to College students in India?</label>
 		<?php echo $form->textArea($model,'reachout_plan',array('rows'=>9, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'reachout_plan'); ?>
 	</div>

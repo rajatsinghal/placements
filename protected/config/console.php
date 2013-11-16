@@ -8,7 +8,11 @@ return array(
 	// application components
 	'components'=>array(
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=placements;',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '112358',
+			'charset' => 'utf8',
 		),
 		// uncomment the following to use a MySQL database
 		/*
