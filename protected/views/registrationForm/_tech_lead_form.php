@@ -62,6 +62,12 @@
 		<?php echo $form->textField($model,'website',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'website'); ?>
 	</div>
+
+	<div class="row">
+                <?php echo $form->label($model, 'Current Annual Salary', array('class'=>'main_label')); ?>
+                <?php echo $form->textField($model,'current_annual_salary',array('size'=>60,'maxlength'=>255)); ?>
+                <?php echo $form->error($model,'current_annual_salary'); ?>
+        </div>
 	
     
     <div class="row">

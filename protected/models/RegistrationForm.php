@@ -55,11 +55,11 @@ class RegistrationForm extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id, question', 'numerical', 'integerOnly'=>true),
-			array('name, email, mobile, ', 'required'),
+			array('name, email, mobile, current_annual_salary', 'required'),
 			array('email', 'email','message'=>'Please enter a valid email address.'),
 			array('file_upload', 'file', 'types'=>'pdf','allowEmpty'=>FALSE),
 			array('question', 'compare','compareValue'=>7,'message'=>'Solve the simple math problem above. This is to protect against Spam BOTS.'),
-			array('name, branch, mobile, email, availability_dates, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information, role, github_url, stackoverflow_url', 'length', 'max'=>255),
+			array('name, branch, mobile, email, availability_dates, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information, role, github_url, stackoverflow_url, current_annual_salary', 'length', 'max'=>255),
 			array('challenging_work, scaled_up_applications, sql_vs_nosql, liked_mobile_apps', 'safe'),
 			array('role', 'requiredQuestionsForRole'),
 			array('id, name, branch, mobile, email, website, twitter_id, gpa, os, jquery, jquery_info, ror, ror_info, php, php_info, drupal, drupal_info, wordpress, wordpress_info, file_upload, information, question', 'safe', 'on'=>'search'),
