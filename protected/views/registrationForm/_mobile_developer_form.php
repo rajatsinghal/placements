@@ -1,6 +1,6 @@
 <div class="form">
 	
-	<p><strong>We are looking to get our server and database architecture up-to-speed to handle the influx of new users and you will be playing a crucial role in that. You will be collaborating closely with the Product managers and Developers in your role.</strong></p>
+	<p><strong>We are looking to kickstart our mobile strategy, for which you will be at the forefront. You will lead the development process for our  Android App.</strong></p>
 	
 	<p><strong>We are looking for someone with: </strong></p>
 	<ol>
