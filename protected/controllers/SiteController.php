@@ -67,7 +67,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(array('/registrationForm/admin'));
+				$this->redirect(array('/registrationForm/adminOcta'));
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
