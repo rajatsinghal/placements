@@ -137,14 +137,16 @@ class RegistrationForm extends CActiveRecord
 	public function search() {
 
 		$criteria=new CDbCriteria;
+		
+		$criteria->addCondition('role is not null');
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('branch',$this->branch,true);
+		$criteria->compare('role',$this->branch,true);
 		$criteria->compare('mobile',$this->mobile,true);
 		$criteria->compare('email',$this->email,true);
-		$criteria->compare('website',$this->website,true);
-		$criteria->compare('twitter_id',$this->twitter_id,true);
+		$criteria->compare('stackoverflow_url',$this->website,true);
+		$criteria->compare('github_url',$this->twitter_id,true);
 		$criteria->compare('file_upload',$this->file_upload,true);
 		$criteria->compare('information',$this->information,true);
 		$criteria->compare('question',$this->question);
