@@ -55,14 +55,30 @@ class RegistrationForm extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id, question', 'numerical', 'integerOnly'=>true),
-			array('name, email, mobile, question, college, availability_dates, past_experience, hitwicket_experience, reachout_plan, hitwicket_team_name, hiwicket_user_engagement_strategy', 'required'),
+			array('name, email, mobile, ', 'required'),
 			array('email', 'email','message'=>'Please enter a valid email address.'),
 			array('file_upload', 'file', 'types'=>'pdf','allowEmpty'=>FALSE),
 			array('question', 'compare','compareValue'=>7,'message'=>'Solve the simple math problem above. This is to protect against Spam BOTS.'),
-			array('name, branch, mobile, email, availability_dates, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information', 'length', 'max'=>255),
-			
+			array('name, branch, mobile, email, availability_dates, website, facebook_profile_url, hitwicket_team_name, linkedin_profile_url, twitter_id, file_upload, information, role, github_url, stackoverflow_url', 'length', 'max'=>255),
+			array('challenging_work, scaled_up_applications, sql_vs_nosql, liked_mobile_apps', 'safe'),
+			array('role', 'requiredQuestionsForRole'),
 			array('id, name, branch, mobile, email, website, twitter_id, gpa, os, jquery, jquery_info, ror, ror_info, php, php_info, drupal, drupal_info, wordpress, wordpress_info, file_upload, information, question', 'safe', 'on'=>'search'),
 		);
+	}
+	
+	public function requiredQuestionsForRole($attribute, $params) {
+		if(!$this->challenging_work)
+			$this->addError('challenging_work', "Please answer the question.");
+		if($this->role == "TECH_LEAD") {
+			if(!$this->sql_vs_nosql)
+				$this->addError('sql_vs_nosql', "Please answer the question.");
+			if(!$this->scaled_up_applications)
+				$this->addError('scaled_up_applications', "Please answer the question.");
+		} else if($this->role == "MOBILE_DEVELOPER") {
+			if(!$this->liked_mobile_apps) {
+				$this->addError('liked_mobile_apps', "Please answer the question.");
+			}
+		}
 	}
 
 	/**
@@ -109,6 +125,8 @@ class RegistrationForm extends CActiveRecord
 			'match_report' => 'This', 
 			'reachout_plan' => 'This',
 			'question' => 'Spam Check',
+			'github_url'=>'Github Profile Url',
+			'stackoverflow_url'=>"Stack Overflow Profile Url"
 		);
 	}
 

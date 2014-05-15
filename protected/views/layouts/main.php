@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 	<meta charset="utf-8">
-	<title>Hitwicket Internship</title>
+	<title>Join Hitwicket</title>
 	<meta name="description" content="">
 	<meta name="author" content="Octathorpe Web Consultants">
 	<!--[if lt IE 9]>
@@ -30,7 +30,7 @@
 			<a href="http://hitwicket.com" target="_blank" id="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo_com.png" alt="Hitwicket" /></a>
         	</div>
             <div class="eight columns omega last" >
-				<h2 class="drive">Internship Registration</h2>
+				<h2 class="drive">Join Hitwicket</h2>
         	</div>
 		</div><!-- header -->
 

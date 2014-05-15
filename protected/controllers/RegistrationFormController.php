@@ -109,14 +109,14 @@ class RegistrationFormController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionNew()
-	{
+	public function actionNew($role) {
+		
+		if($role != "TECH_LEAD" && $role != "MOBILE_DEVELOPER")
+			throw new CHttpException(404,'The requested page does not exist.');
+			
 		$model=new RegistrationForm;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-		if(isset($_POST['RegistrationForm']))
-		{
+		$model->role = $role;
+		if(isset($_POST['RegistrationForm'])) {
 			$model->attributes=$_POST['RegistrationForm'];
 			//$time=date('j-m-Y  H:i:s');
 			$model->created=date('j-m-Y  H:i:s');
@@ -152,9 +152,7 @@ class RegistrationFormController extends Controller
 			if(isset($_GET['college']) && $_GET['college'] != "others")
 				$model->college = $_GET['college'];
 
-		$this->render('new',array(
-			'model'=>$model,
-		));
+		$this->render('new',array('model'=>$model, 'role'=>$role));
 	}
 	
 	public function actionThankyou() {

@@ -7,41 +7,23 @@
     <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/hitwicket.jpg" alt="Hitwicket" class="" />
 	<h3>About Hitwicket</h3>
 	<p>
-    Hitwicket.com (<a href="http://hitwicket.com" target="_blank">http://hitwicket.com</a>) is a fast growing online cricket strategy game with over 17,000 active users. After 3 years of developing the complex application, Hitwicket opened to public in January 2013 and since then we've been experiencing exponential growth with great feedback from users (<a href="http://hitwicket.com/Testimonials" target="_blank">http://hitwicket.com/Testimonials</a>). With a solid product already build and constantly improving, we are confident that with the right amount of marketing, we can take Hitwicket to success on a worldwide scale. Our startup story has been recently covered by YourStory, <a href="http://yourstory.in/2013/10/hitwicket-online-cricket-strategy-game/" target="_blank">http://yourstory.in/2013/10/hitwicket-online-cricket-strategy-game/</a><br /><br />
-    
-<strong>The primary objective of the internship will be to setup a marketing groundwork to launch the game globally, targeting all cricket playing nations.</strong>
-	<h3>Kay Takeaways</h3>
-	<ul>
-		<li>Working on a startup that combines the two biggest entertainment sectors, Cricket and Gaming.</li>
-		<li>Being part of a team that is aiming to build the biggest cricket game in the world.</li>
-		<li>A certificate of Internship from the company.</li>
-	</ul>
-    
-    
-	<h3>Details</h3>
-	<ul>
-    	<li>Skills needed: Marketing, Social Media, Content Writing and Knowledge about cricket!</li>
-		<li>This will be a virtual internship for a minimum period of 2 months.</li>
-		<li>Ensure that your resume is in PDF format. <strong>Other formats will be rejected</strong>.</li>
-		<li>A stipend of Rs 5,000/month will be paid to the candidate.</li> 
-		<li>For any queries, email us at <a href="mailto:support@hitwicket.com">support@hitwicket.com</a>.</li>
-	</ul>
-	<!--<label><input type="checkbox" /> I've read the above</label> <br clear="all" /> -->
-	<br />
+    Hitwicket.com is a unique online cricket strategy game with more than 35,000 active users. Hitwicket opened to public in January 2013 and since then we've been experiencing exponential growth with great feedback from users (<a href="http://hitwicket.com/Testimonials" target="_blank">http://hitwicket.com/Testimonials</a>). Our startup story has been covered by YourStory, <a href="http://yourstory.in/2013/10/hitwicket-online-cricket-strategy-game/" target="_blank">http://yourstory.in/2013/10/hitwicket-online-cricket-strategy-game/</a><br />
+    </p><br />
 	<div class="tac">
-		<?php echo CHtml::link("Proceed to Registration &raquo;", array('new'), array('class'=>'button m20', 'id'=>'register')); ?>
+		<?php echo CHtml::link("Register for Tech Lead &raquo;", array('new', 'role'=>'TECH_LEAD'), array('class'=>'button m20', 'id'=>'register')); ?>&nbsp;&nbsp;&nbsp;&nbsp;
+		<?php echo CHtml::link("Register for Mobile Developer &raquo;", array('new', 'role'=>'MOBILE_DEVELOPER'), array('class'=>'button m20', 'id'=>'register')); ?>
         <br />
 	</div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
-	$("#register").click(function() {
+	/*$("#register").click(function() {
 /		if(!$("#college").val()) {
 			$("#college_error").show();
 			return false;
-		} */
+		} 
 //		else {
 			$(this).attr('href', "<?php echo $this->createUrl('/registrationForm/new', array('college'=>'NULL')); ?>".replace("NULL", $("#college").val()));
 //		}
-	});
+	});*/
 </script>
