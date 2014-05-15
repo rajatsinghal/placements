@@ -4,7 +4,7 @@ class m140515_153609_current_annual_salary extends CDbMigration
 {
 	public function up()
 	{
-		$this->addColumn('registration_form', current_annual_salary', 'varchar(255)');
+		$this->addColumn('registration_form', 'current_annual_salary', 'varchar(255)');
 	}
 
 	public function down()
