@@ -8,7 +8,7 @@
 	<h3>About Hitwicket</h3>
 	<p>
     Hitwicket.com is a unique online cricket strategy game with more than 35,000 active users. Hitwicket opened to public in January 2013 and since then we've been experiencing exponential growth with great feedback from users (<a href="http://hitwicket.com/Testimonials" target="_blank">http://hitwicket.com/Testimonials</a>). Our startup story has been covered by YourStory, <a href="http://yourstory.in/2013/10/hitwicket-online-cricket-strategy-game/" target="_blank">http://yourstory.in/2013/10/hitwicket-online-cricket-strategy-game/</a><br />
-<strong>Compensation will be paid as per industry standard</strong>    
+	<br /><strong>Compensation will be paid as per industry standard.</strong>    
 </p><br />
 	<div class="tac">
 		<?php echo CHtml::link("Register for Tech Lead &raquo;", array('new', 'role'=>'TECH_LEAD'), array('class'=>'button m20', 'id'=>'register')); ?>&nbsp;&nbsp;&nbsp;&nbsp;
