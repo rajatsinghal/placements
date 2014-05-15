@@ -8,17 +8,15 @@
 		//'id',
 		'name',
 		'email',
-		'college',
+		'role',
 		array(
-			'name'=>'facebook_profile_url',
-			'header'=>'FB'
+			'name'=>'github_url',
+			'header'=>'Github'
 		),
 		array(
-			'name'=>'hitwicket_team_name',
-			'header'=>'HW Team'
+			'name'=>'stackoverflow_url',
+			'header'=>'Stack Overflow'
 		),
-		//'branch',
-		//'mobile',
 		array(
 			'class'=>'CButtonColumn',
 		),

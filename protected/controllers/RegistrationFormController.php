@@ -218,7 +218,7 @@ class RegistrationFormController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdminOcta()
 	{
 		$model=new RegistrationForm('search');
 		$model->unsetAttributes();  // clear any default values

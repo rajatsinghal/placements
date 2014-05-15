@@ -1,10 +1,10 @@
 <div class="form">
 	
-	<p><strong>We are looking to kickstart our mobile strategy, for which you will be at the forefront. You will lead the development process for our  Android App.</strong></p>
+	<p><strong>We are looking to kickstart our mobile strategy, for which you will be at the forefront. You will lead the development process for our Android/iOS App.</strong></p>
 	
 	<p><strong>We are looking for someone with: </strong></p>
 	<ol>
-		<li>3+ years of professional software development experience, with 2+ years of Android/IOS application development experience.</li>
+		<li>2+ years of Android/iOS application development experience.</li>
 		<li>Experienced in leading development of mobile applications that have been successfully delivered to customers.</li>
 		<li>Bonus if experienced in PHP and PHP MVC frameworks like Yii and building REST APIs for mobile applications with them.</li>
 	</ol><br />
@@ -68,7 +68,7 @@
 	</div>
 
     <div class="row">
-		<label>Q2) One mobile apps that you particularly like and why.</label>
+		<label>Q2) Which mobile app do you particularly like and why?</label>
 		<?php echo $form->textArea($model,'liked_mobile_apps',array('rows'=>9, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'liked_mobile_apps'); ?>
 	</div>
